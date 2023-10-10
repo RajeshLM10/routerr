@@ -1,0 +1,99 @@
+.home-container {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.featured-shoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.shoe {
+    border: 1px solid #ccc;
+    padding: 50px;
+}
+.highlight {
+    background-color: yellow; /* Set the background color for highlighting */
+    /* You can customize other styles like text color, font-weight, etc. */
+}
+.push {
+    height: 100px; /* Adjust the height as needed */
+}
+.home-container {
+    position: relative; /* Make sure the container is a positioned element */
+  }
+  
+  .home-container::before {
+    content: ""; /* Add content to the pseudo-element */
+    position: absolute; /* Position it absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/shoes.jpg'); /* Specify your background image path */
+    opacity: 0.5; /* Adjust the opacity as needed (0.0 to 1.0) */
+    z-index: -1; /* Place it behind the content */
+  }
+.shoe{
+    background-color: rgb(241, 236, 236,0.8);
+}
+.hed {
+    background-color: rgba(199, 231, 157, 0.5); /* Azure with 0.8 opacity */
+  }
+  .view-details-button {
+    background-color: #353002; /* Change to your desired background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding as needed */
+    cursor: pointer;
+    text-decoration: none; /* Remove underlines for links */
+  }
+  
+  .view-details-button:hover {
+    background-color: #b8bb06; /* Change to a different color for hover effect */
+  }
+  /* Default styles */
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.hed {
+  margin-bottom: 30px;
+}
+
+.featured-shoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shoe {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.view-details-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .featured-shoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shoe {
+    width: 80%;
+  }
+}

@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.head{
+    background-color:rgb(35, 92, 73);
+    padding: 10px;
+}
+.grid-item {
+  height: 300px; /* Adjust the height as needed */
+}
+.link
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* text-decoration: none; */
+    list-style: none;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+.atext{
+    color: azure;
+    text-decoration-line: none;
+}
+img {
+    width: 100%;
+  }
+  /* CSS for the product container */
+.container.pro {
+    background-color: #20272b; /* Background color */
+    border: 1px solid #131313; /* Border */
+    padding: 50px; /* Padding around the container */
+    margin-bottom: 20px; /* Margin at the bottom to separate containers */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  }
+  
+  /* Style for the product boxes inside the container */
+  .container.pro .product {
+    text-align: center;
+    background-color: #9a9b86; /* Background color for each product box */
+    border: 1px solid #ddd; /* Border for each product box */
+    padding: 15px; /* Padding inside each product box */
+    margin-bottom: 15px; /* Margin at the bottom of each product box */
+    border-radius: 5px; /* Rounded corners for each product box */
+  }
+  
+  /* Style for the product images */
+  .container.pro .product img {
+    max-width: 100%; /* Make sure images don't exceed their container */
+  }
+  .add-to-cart-button {
+    background-color: #0d1f31; /* Change to your desired background color */
+    color: #fff; /* Text color */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #06427e; /* Change to a different color for hover effect */
+  }
+  .quantity-controls{
+    margin: 10px;
+  }
+
+  .quantity-button {
+    background-color: #0d1f31; /* Change to your desired background color */
+    color: #e5eef7; /* Text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    padding: 4px 8px; /* Adjust padding as needed */
+    cursor: pointer;
+  }
+  
+  .quantity-button:hover {
+    background-color: #0056b3; /* Change to a different color for hover effect */
+  }
+  
+  /* Style for the quantity display */
+  .quantity {
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make it bold */
+    margin: 0 8px; /* Add some spacing around the quantity */
+  }
+ /* Set consistent dimensions for product images */
+ .product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width:300px; /* Set a fixed width for each product card */
+  height: 311px; /* Set a fixed height for each product card */
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensure the image maintains its aspect ratio and covers the container */
+}
+.sea {
+  width: 150px; /* Adjust the width as needed */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Style the search button */
+.sea-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Add some hover effect to the button */
+.sea-button:hover {
+  background-color: #0056b3;
+}
+/* Add any additional styles you need for your product cards */
+
+
+
+.scrollable-description {
+  max-height: 100px; /* Adjust the maximum height as needed */
+  overflow-y: scroll;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Adjust the gap as needed */
+}
+.product-image {
+  width: 200px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+   /* Maintain aspect ratio and cover the container */
+   align-items: center;
+}
+.card {
+  background-color:skyblue;
+  border: 1px solid #ddd; /* Border for separation */
+  padding: 10px; /* Padding for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+.card-body {
+  background-color: #f9f9f9; /* Background color for card content */
+  text-align: center; /* Center-align text */
+  padding: 10px; /* Padding for spacing */
+}
+.card-title {
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Bold font weight */
+  color: #333; /* Text color */
+}
+.card-text {
+  font-size: 16px; /* Adjust font size */
+  color: #555; /* Text color */
+}
+.cartbut {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 8px 16px; /* Padding for spacing */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add pointer cursor */
+}
+.card-footer {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #f5f5f5; /* Set the background color to your desired color */
+  padding: 10px; /* Add padding for better visual separation */
+}
+
+.CountdownTimer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5733;
+}
+.blinking-text {
+  animation: blink 1s infinite;
+  color: red;
+  background-color: #131313;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+/* Define media queries for smaller screens (e.g., max-width: 768px) */
+@media (max-width: 768px) {
+  .grid-container {
+    display: block; /* Change to a block layout on smaller screens */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Add some spacing between cards */
+  }
+
+  .card-body {
+    padding: 10px; /* Adjust padding for card body */
+  }
+
+  .card-footer {
+    text-align: center; /* Center-align the card footer */
+  }
+
+  .blinking-text {
+    animation: none; /* Disable blinking on smaller screens */
+  }
+}

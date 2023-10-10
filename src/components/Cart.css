@@ -1,0 +1,34 @@
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    background-color: #d5eef5;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  .cart {
+    /* Your other cart styles here */
+  
+    .toggle-button {
+      background-color: #007bff; /* Change to your desired button color */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .toggle-button:hover {
+      background-color: #0056b3; /* Change to your desired button hover color */
+    }
+  
+    .minimized .toggle-button {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+  }
+  

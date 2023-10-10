@@ -1,0 +1,48 @@
+/* LoginForm.css */
+
+/* Style for the container of the login form */
+.form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Style for the form heading */
+  h2 {
+    color: #333;
+  }
+  
+  /* Style for form labels */
+  label {
+    display: flex;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Style for form inputs */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the login button */
+  .logg {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style for the login button on hover */
+  .logg:hover {
+    background-color: #0056b3;
+  }
+  
